@@ -45,7 +45,9 @@ public class MainActivity2 extends AppCompatActivity {
                     if(!s.isEmpty()){
                     db.addBirthday(ob1);
                     Intent intent=new Intent(MainActivity2.this,MainActivity.class);
-                    startActivity(intent);}
+                    startActivity(intent);
+                    MainActivity2.this.finish();
+                    }
                     else{
                         Toast.makeText(MainActivity2.this, "Name cannot be empty", Toast.LENGTH_SHORT).show();
                     }

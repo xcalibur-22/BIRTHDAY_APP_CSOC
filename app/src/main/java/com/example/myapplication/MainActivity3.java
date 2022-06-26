@@ -70,6 +70,7 @@ public class MainActivity3 extends AppCompatActivity {
                 db.deleteBday(ID);
                 Intent intent=new Intent(MainActivity3.this,MainActivity.class);
                 startActivity(intent);
+                MainActivity3.this.finish();
             }
         });
 
